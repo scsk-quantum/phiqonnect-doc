@@ -1,0 +1,20 @@
+phiqonnect package
+==================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   phiqonnect.classical_algorithm
+   phiqonnect.quantum_algorithm
+   phiqonnect.utils
+
+Module contents
+---------------
+
+.. automodule:: phiqonnect
+   :members:
+   :undoc-members:
+   :show-inheritance:

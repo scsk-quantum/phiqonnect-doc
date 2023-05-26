@@ -1,0 +1,19 @@
+phiqonnect.quantum\_algorithm.circuit package
+=============================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   phiqonnect.quantum_algorithm.circuit.data_encoding
+   phiqonnect.quantum_algorithm.circuit.qkernel
+
+Module contents
+---------------
+
+.. automodule:: phiqonnect.quantum_algorithm.circuit
+   :members:
+   :undoc-members:
+   :show-inheritance:

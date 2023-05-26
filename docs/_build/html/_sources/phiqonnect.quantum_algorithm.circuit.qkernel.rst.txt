@@ -1,0 +1,69 @@
+phiqonnect.quantum\_algorithm.circuit.qkernel package
+=====================================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   phiqonnect.quantum_algorithm.circuit.qkernel.base
+
+Submodules
+----------
+
+phiqonnect.quantum\_algorithm.circuit.qkernel.mps2\_qkernel module
+------------------------------------------------------------------
+
+.. automodule:: phiqonnect.quantum_algorithm.circuit.qkernel.mps2_qkernel
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+phiqonnect.quantum\_algorithm.circuit.qkernel.mps\_qkernel module
+-----------------------------------------------------------------
+
+.. automodule:: phiqonnect.quantum_algorithm.circuit.qkernel.mps_qkernel
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+phiqonnect.quantum\_algorithm.circuit.qkernel.swap\_ttn\_qkernel module
+-----------------------------------------------------------------------
+
+.. automodule:: phiqonnect.quantum_algorithm.circuit.qkernel.swap_ttn_qkernel
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+phiqonnect.quantum\_algorithm.circuit.qkernel.sycamore\_qkernel module
+----------------------------------------------------------------------
+
+.. automodule:: phiqonnect.quantum_algorithm.circuit.qkernel.sycamore_qkernel
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+phiqonnect.quantum\_algorithm.circuit.qkernel.tp2\_qkernel module
+-----------------------------------------------------------------
+
+.. automodule:: phiqonnect.quantum_algorithm.circuit.qkernel.tp2_qkernel
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+phiqonnect.quantum\_algorithm.circuit.qkernel.tp\_qkernel module
+----------------------------------------------------------------
+
+.. automodule:: phiqonnect.quantum_algorithm.circuit.qkernel.tp_qkernel
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: phiqonnect.quantum_algorithm.circuit.qkernel
+   :members:
+   :undoc-members:
+   :show-inheritance:

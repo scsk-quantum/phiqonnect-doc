@@ -1,0 +1,21 @@
+phiqonnect.quantum\_algorithm.quantum\_ai.regression package
+============================================================
+
+Submodules
+----------
+
+phiqonnect.quantum\_algorithm.quantum\_ai.regression.qsvr module
+----------------------------------------------------------------
+
+.. automodule:: phiqonnect.quantum_algorithm.quantum_ai.regression.qsvr
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: phiqonnect.quantum_algorithm.quantum_ai.regression
+   :members:
+   :undoc-members:
+   :show-inheritance:

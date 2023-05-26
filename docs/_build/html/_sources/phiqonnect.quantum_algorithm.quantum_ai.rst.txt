@@ -1,0 +1,19 @@
+phiqonnect.quantum\_algorithm.quantum\_ai package
+=================================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   phiqonnect.quantum_algorithm.quantum_ai.classification
+   phiqonnect.quantum_algorithm.quantum_ai.regression
+
+Module contents
+---------------
+
+.. automodule:: phiqonnect.quantum_algorithm.quantum_ai
+   :members:
+   :undoc-members:
+   :show-inheritance:

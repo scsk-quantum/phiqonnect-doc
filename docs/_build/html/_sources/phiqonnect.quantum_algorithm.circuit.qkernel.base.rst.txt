@@ -1,0 +1,29 @@
+phiqonnect.quantum\_algorithm.circuit.qkernel.base package
+==========================================================
+
+Submodules
+----------
+
+phiqonnect.quantum\_algorithm.circuit.qkernel.base.qkernel module
+-----------------------------------------------------------------
+
+.. automodule:: phiqonnect.quantum_algorithm.circuit.qkernel.base.qkernel
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+phiqonnect.quantum\_algorithm.circuit.qkernel.base.qkernel\_ttn module
+----------------------------------------------------------------------
+
+.. automodule:: phiqonnect.quantum_algorithm.circuit.qkernel.base.qkernel_ttn
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: phiqonnect.quantum_algorithm.circuit.qkernel.base
+   :members:
+   :undoc-members:
+   :show-inheritance:

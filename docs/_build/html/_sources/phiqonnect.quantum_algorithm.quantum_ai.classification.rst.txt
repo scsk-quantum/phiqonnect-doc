@@ -1,0 +1,29 @@
+phiqonnect.quantum\_algorithm.quantum\_ai.classification package
+================================================================
+
+Submodules
+----------
+
+phiqonnect.quantum\_algorithm.quantum\_ai.classification.multiclass\_qsvc module
+--------------------------------------------------------------------------------
+
+.. automodule:: phiqonnect.quantum_algorithm.quantum_ai.classification.multiclass_qsvc
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+phiqonnect.quantum\_algorithm.quantum\_ai.classification.qsvc module
+--------------------------------------------------------------------
+
+.. automodule:: phiqonnect.quantum_algorithm.quantum_ai.classification.qsvc
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: phiqonnect.quantum_algorithm.quantum_ai.classification
+   :members:
+   :undoc-members:
+   :show-inheritance:

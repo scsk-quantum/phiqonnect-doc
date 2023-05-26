@@ -1,0 +1,29 @@
+phiqonnect.utils.dataset\_utils package
+=======================================
+
+Submodules
+----------
+
+phiqonnect.utils.dataset\_utils.load\_classification\_datasets module
+---------------------------------------------------------------------
+
+.. automodule:: phiqonnect.utils.dataset_utils.load_classification_datasets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+phiqonnect.utils.dataset\_utils.load\_regression\_datasets module
+-----------------------------------------------------------------
+
+.. automodule:: phiqonnect.utils.dataset_utils.load_regression_datasets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: phiqonnect.utils.dataset_utils
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>phiqonnect.utils.dataset_utils package &mdash; phiqonnect 1.0.1 ドキュメント</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <link rel="next" title="phiqonnect.utils.device package" href="phiqonnect.utils.device.html" />
+    <link rel="prev" title="phiqonnect.utils.calcuration package" href="phiqonnect.utils.calcuration.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> phiqonnect
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="phiqonnect.html">phiqonnect package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="phiqonnect.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="phiqonnect.classical_algorithm.html">phiqonnect.classical_algorithm package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="phiqonnect.quantum_algorithm.html">phiqonnect.quantum_algorithm package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="phiqonnect.utils.html">phiqonnect.utils package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="phiqonnect.utils.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="phiqonnect.utils.html#module-phiqonnect.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="phiqonnect.html#module-phiqonnect">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">phiqonnect</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="phiqonnect.html">phiqonnect package</a></li>
+          <li class="breadcrumb-item"><a href="phiqonnect.utils.html">phiqonnect.utils package</a></li>
+      <li class="breadcrumb-item active">phiqonnect.utils.dataset_utils package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/phiqonnect.utils.dataset_utils.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="phiqonnect-utils-dataset-utils-package">
+<h1>phiqonnect.utils.dataset_utils package<a class="headerlink" href="#phiqonnect-utils-dataset-utils-package" title="この見出しへのパーマリンク"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="この見出しへのパーマリンク"></a></h2>
+</section>
+<section id="module-phiqonnect.utils.dataset_utils.load_classification_datasets">
+<span id="phiqonnect-utils-dataset-utils-load-classification-datasets-module"></span><h2>phiqonnect.utils.dataset_utils.load_classification_datasets module<a class="headerlink" href="#module-phiqonnect.utils.dataset_utils.load_classification_datasets" title="この見出しへのパーマリンク"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="phiqonnect.utils.dataset_utils.load_classification_datasets.load_breast_cancer">
+<span class="sig-prename descclassname"><span class="pre">phiqonnect.utils.dataset_utils.load_classification_datasets.</span></span><span class="sig-name descname"><span class="pre">load_breast_cancer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pca'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_ration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shuffle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(8,</span> <span class="pre">8)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#phiqonnect.utils.dataset_utils.load_classification_datasets.load_breast_cancer" title="この定義へのパーマリンク"></a></dt>
+<dd><p>breast_cancerデータセットを読み込む</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_dim</strong> (<em>int</em>) -- 特徴料の次元</p></li>
+<li><p><strong>dim_reduction</strong> (<em>string</em>) -- 次元削減手法</p></li>
+<li><p><strong>train_size</strong> (<em>int</em>) -- 学習データのサイズ</p></li>
+<li><p><strong>test_size</strong> (<em>int</em>) -- テストデータのサイズ</p></li>
+<li><p><strong>test_ration</strong> (<em>int</em>) -- 母集団からの学習＆テストデータの振り分けの比率</p></li>
+<li><p><strong>random_state</strong> (<em>int</em>) -- データのランダムシード</p></li>
+<li><p><strong>plot_data</strong> (<em>boolean</em>) -- プロットを表示するか</p></li>
+<li><p><strong>shuffle</strong> (<em>boolean</em>) -- データ順序をシャッフルするかどうか</p></li>
+<li><p><strong>class_label</strong> (<em>array</em>) -- クラスラベルの更新をする場合に使用</p></li>
+<li><p><strong>class_num</strong> (<em>int</em>) -- クラス数の指定</p></li>
+<li><p><strong>figsize</strong> (<em>(</em><em>int</em><em>, </em><em>int</em><em>)</em>) -- プロットを表示する場合にサイズを指定</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>training_input</strong> (<em>array</em>) -- 学習データ</p></li>
+<li><p><strong>test_input</strong> (<em>array</em>) -- テストデータ</p></li>
+<li><p><strong>label_train</strong> (<em>array</em>) -- 学習データの正解ラベル</p></li>
+<li><p><strong>label_test</strong> (<em>array</em>) -- テストデータの正解ラベル</p></li>
+<li><p><strong>class_label</strong> (<em>array</em>) -- 更新されたラベル</p></li>
+<li><p><strong>data</strong> (<em>array</em>) -- オリジナルデータ</p></li>
+<li><p><strong>target</strong> (<em>array</em>) -- オリジナルの正解ラベル</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="phiqonnect.utils.dataset_utils.load_classification_datasets.load_credit_card">
+<span class="sig-prename descclassname"><span class="pre">phiqonnect.utils.dataset_utils.load_classification_datasets.</span></span><span class="sig-name descname"><span class="pre">load_credit_card</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'original'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_ration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shuffle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[0,</span> <span class="pre">1]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(8,</span> <span class="pre">8)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#phiqonnect.utils.dataset_utils.load_classification_datasets.load_credit_card" title="この定義へのパーマリンク"></a></dt>
+<dd><p>credit_cardデータセットを読み込む</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_dim</strong> (<em>int</em>) -- 特徴料の次元</p></li>
+<li><p><strong>dim_reduction</strong> (<em>string</em>) -- 次元削減手法(pca|original))</p></li>
+<li><p><strong>train_size</strong> (<em>int</em>) -- 学習データのサイズ</p></li>
+<li><p><strong>test_size</strong> (<em>int</em>) -- テストデータのサイズ</p></li>
+<li><p><strong>test_ration</strong> (<em>int</em>) -- 母集団からの学習＆テストデータの振り分けの比率</p></li>
+<li><p><strong>random_state</strong> (<em>int</em>) -- データのランダムシード</p></li>
+<li><p><strong>plot_data</strong> (<em>boolean</em>) -- プロットを表示するか</p></li>
+<li><p><strong>shuffle</strong> (<em>boolean</em>) -- データ順序をシャッフルするかどうか</p></li>
+<li><p><strong>class_label</strong> (<em>array</em>) -- クラスラベルの更新をする場合に使用</p></li>
+<li><p><strong>class_num</strong> (<em>int</em>) -- クラス数の指定</p></li>
+<li><p><strong>figsize</strong> (<em>(</em><em>int</em><em>, </em><em>int</em><em>)</em>) -- プロットを表示する場合にサイズを指定</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>training_input</strong> (<em>array</em>) -- 学習データ</p></li>
+<li><p><strong>test_input</strong> (<em>array</em>) -- テストデータ</p></li>
+<li><p><strong>label_train</strong> (<em>array</em>) -- 学習データの正解ラベル</p></li>
+<li><p><strong>label_test</strong> (<em>array</em>) -- テストデータの正解ラベル</p></li>
+<li><p><strong>class_label</strong> (<em>array</em>) -- 更新されたラベル</p></li>
+<li><p><strong>data</strong> (<em>array</em>) -- オリジナルデータ</p></li>
+<li><p><strong>target</strong> (<em>array</em>) -- オリジナルの正解ラベル</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="phiqonnect.utils.dataset_utils.load_classification_datasets.load_digits">
+<span class="sig-prename descclassname"><span class="pre">phiqonnect.utils.dataset_utils.load_classification_datasets.</span></span><span class="sig-name descname"><span class="pre">load_digits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pca'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_ration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shuffle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(8,</span> <span class="pre">8)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#phiqonnect.utils.dataset_utils.load_classification_datasets.load_digits" title="この定義へのパーマリンク"></a></dt>
+<dd><p>digitsデータセットを読み込む</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_dim</strong> (<em>int</em>) -- 特徴料の次元</p></li>
+<li><p><strong>dim_reduction</strong> (<em>string</em>) -- 次元削減手法(pca|original))</p></li>
+<li><p><strong>train_size</strong> (<em>int</em>) -- 学習データのサイズ</p></li>
+<li><p><strong>test_size</strong> (<em>int</em>) -- テストデータのサイズ</p></li>
+<li><p><strong>test_ration</strong> (<em>int</em>) -- 母集団からの学習＆テストデータの振り分けの比率</p></li>
+<li><p><strong>random_state</strong> (<em>int</em>) -- データのランダムシード</p></li>
+<li><p><strong>plot_data</strong> (<em>boolean</em>) -- プロットを表示するか</p></li>
+<li><p><strong>shuffle</strong> (<em>boolean</em>) -- データ順序をシャッフルするかどうか</p></li>
+<li><p><strong>class_label</strong> (<em>array</em>) -- クラスラベルの更新をする場合に使用</p></li>
+<li><p><strong>class_num</strong> (<em>int</em>) -- クラス数の指定</p></li>
+<li><p><strong>figsize</strong> (<em>(</em><em>int</em><em>, </em><em>int</em><em>)</em>) -- プロットを表示する場合にサイズを指定</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>training_input</strong> (<em>array</em>) -- 学習データ</p></li>
+<li><p><strong>test_input</strong> (<em>array</em>) -- テストデータ</p></li>
+<li><p><strong>label_train</strong> (<em>array</em>) -- 学習データの正解ラベル</p></li>
+<li><p><strong>label_test</strong> (<em>array</em>) -- テストデータの正解ラベル</p></li>
+<li><p><strong>class_label</strong> (<em>array</em>) -- 更新されたラベル</p></li>
+<li><p><strong>data</strong> (<em>array</em>) -- オリジナルデータ</p></li>
+<li><p><strong>target</strong> (<em>array</em>) -- オリジナルの正解ラベル</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="phiqonnect.utils.dataset_utils.load_classification_datasets.load_fashion_mnist">
+<span class="sig-prename descclassname"><span class="pre">phiqonnect.utils.dataset_utils.load_classification_datasets.</span></span><span class="sig-name descname"><span class="pre">load_fashion_mnist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pca'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_ration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shuffle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(8,</span> <span class="pre">8)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#phiqonnect.utils.dataset_utils.load_classification_datasets.load_fashion_mnist" title="この定義へのパーマリンク"></a></dt>
+<dd><p>fashion_mnistデータセットを読み込む</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_dim</strong> (<em>int</em>) -- 特徴料の次元</p></li>
+<li><p><strong>dim_reduction</strong> (<em>string</em>) -- 次元削減手法(pca|original))</p></li>
+<li><p><strong>train_size</strong> (<em>int</em>) -- 学習データのサイズ</p></li>
+<li><p><strong>test_size</strong> (<em>int</em>) -- テストデータのサイズ</p></li>
+<li><p><strong>test_ration</strong> (<em>int</em>) -- 母集団からの学習＆テストデータの振り分けの比率</p></li>
+<li><p><strong>random_state</strong> (<em>int</em>) -- データのランダムシード</p></li>
+<li><p><strong>plot_data</strong> (<em>boolean</em>) -- プロットを表示するか</p></li>
+<li><p><strong>shuffle</strong> (<em>boolean</em>) -- データ順序をシャッフルするかどうか</p></li>
+<li><p><strong>class_label</strong> (<em>array</em>) -- クラスラベルの更新をする場合に使用</p></li>
+<li><p><strong>class_num</strong> (<em>int</em>) -- クラス数の指定</p></li>
+<li><p><strong>figsize</strong> (<em>(</em><em>int</em><em>, </em><em>int</em><em>)</em>) -- プロットを表示する場合にサイズを指定</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>training_input</strong> (<em>array</em>) -- 学習データ</p></li>
+<li><p><strong>test_input</strong> (<em>array</em>) -- テストデータ</p></li>
+<li><p><strong>label_train</strong> (<em>array</em>) -- 学習データの正解ラベル</p></li>
+<li><p><strong>label_test</strong> (<em>array</em>) -- テストデータの正解ラベル</p></li>
+<li><p><strong>class_label</strong> (<em>array</em>) -- 更新されたラベル</p></li>
+<li><p><strong>data</strong> (<em>array</em>) -- オリジナルデータ</p></li>
+<li><p><strong>target</strong> (<em>array</em>) -- オリジナルの正解ラベル</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="phiqonnect.utils.dataset_utils.load_classification_datasets.load_iris">
+<span class="sig-prename descclassname"><span class="pre">phiqonnect.utils.dataset_utils.load_classification_datasets.</span></span><span class="sig-name descname"><span class="pre">load_iris</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pca'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_ration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shuffle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(8,</span> <span class="pre">8)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#phiqonnect.utils.dataset_utils.load_classification_datasets.load_iris" title="この定義へのパーマリンク"></a></dt>
+<dd><p>irisデータセットを読み込む</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_dim</strong> (<em>int</em>) -- 特徴料の次元</p></li>
+<li><p><strong>dim_reduction</strong> (<em>string</em>) -- 次元削減手法(pca|original))</p></li>
+<li><p><strong>train_size</strong> (<em>int</em>) -- 学習データのサイズ</p></li>
+<li><p><strong>test_size</strong> (<em>int</em>) -- テストデータのサイズ</p></li>
+<li><p><strong>test_ration</strong> (<em>int</em>) -- 母集団からの学習＆テストデータの振り分けの比率</p></li>
+<li><p><strong>random_state</strong> (<em>int</em>) -- データのランダムシード</p></li>
+<li><p><strong>plot_data</strong> (<em>boolean</em>) -- プロットを表示するか</p></li>
+<li><p><strong>shuffle</strong> (<em>boolean</em>) -- データ順序をシャッフルするかどうか</p></li>
+<li><p><strong>class_label</strong> (<em>array</em>) -- クラスラベルの更新をする場合に使用</p></li>
+<li><p><strong>class_num</strong> (<em>int</em>) -- クラス数の指定</p></li>
+<li><p><strong>figsize</strong> (<em>(</em><em>int</em><em>, </em><em>int</em><em>)</em>) -- プロットを表示する場合にサイズを指定</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>training_input</strong> (<em>array</em>) -- 学習データ</p></li>
+<li><p><strong>test_input</strong> (<em>array</em>) -- テストデータ</p></li>
+<li><p><strong>label_train</strong> (<em>array</em>) -- 学習データの正解ラベル</p></li>
+<li><p><strong>label_test</strong> (<em>array</em>) -- テストデータの正解ラベル</p></li>
+<li><p><em>class_label</em> -- 更新されたラベル</p></li>
+<li><p><strong>data</strong> (<em>array</em>) -- オリジナルデータ</p></li>
+<li><p><strong>target</strong> (<em>array</em>) -- オリジナルの正解ラベル</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="phiqonnect.utils.dataset_utils.load_classification_datasets.load_mnist">
+<span class="sig-prename descclassname"><span class="pre">phiqonnect.utils.dataset_utils.load_classification_datasets.</span></span><span class="sig-name descname"><span class="pre">load_mnist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pca'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_ration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shuffle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(8,</span> <span class="pre">8)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#phiqonnect.utils.dataset_utils.load_classification_datasets.load_mnist" title="この定義へのパーマリンク"></a></dt>
+<dd><p>fashion_mnistデータセットを読み込む</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_dim</strong> (<em>int</em>) -- 特徴料の次元</p></li>
+<li><p><strong>dim_reduction</strong> (<em>string</em>) -- 予測データ</p></li>
+<li><p><strong>train_size</strong> (<em>int</em>) -- 学習データのサイズ</p></li>
+<li><p><strong>test_size</strong> (<em>int</em>) -- テストデータのサイズ</p></li>
+<li><p><strong>test_ration</strong> (<em>int</em>) -- 母集団からの学習＆テストデータの振り分けの比率</p></li>
+<li><p><strong>random_state</strong> (<em>int</em>) -- データのランダムシード</p></li>
+<li><p><strong>plot_data</strong> (<em>boolean</em>) -- プロットを表示するか</p></li>
+<li><p><strong>shuffle</strong> (<em>boolean</em>) -- データ順序をシャッフルするかどうか</p></li>
+<li><p><strong>class_label</strong> (<em>array</em>) -- クラスラベルの更新をする場合に使用</p></li>
+<li><p><strong>class_num</strong> (<em>int</em>) -- クラス数の指定</p></li>
+<li><p><strong>figsize</strong> (<em>(</em><em>int</em><em>, </em><em>int</em><em>)</em>) -- プロットを表示する場合にサイズを指定</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>training_input</strong> (<em>array</em>) -- 学習データ</p></li>
+<li><p><strong>test_input</strong> (<em>array</em>) -- テストデータ</p></li>
+<li><p><strong>label_train</strong> (<em>array</em>) -- 学習データの正解ラベル</p></li>
+<li><p><strong>label_test</strong> (<em>array</em>) -- テストデータの正解ラベル</p></li>
+<li><p><strong>class_label</strong> (<em>array</em>) -- 更新されたラベル</p></li>
+<li><p><strong>data</strong> (<em>array</em>) -- オリジナルデータ</p></li>
+<li><p><strong>target</strong> (<em>array</em>) -- オリジナルの正解ラベル</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="phiqonnect.utils.dataset_utils.load_classification_datasets.load_wine">
+<span class="sig-prename descclassname"><span class="pre">phiqonnect.utils.dataset_utils.load_classification_datasets.</span></span><span class="sig-name descname"><span class="pre">load_wine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pca'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_ration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shuffle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(8,</span> <span class="pre">8)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#phiqonnect.utils.dataset_utils.load_classification_datasets.load_wine" title="この定義へのパーマリンク"></a></dt>
+<dd><p>wineデータセットを読み込む</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_dim</strong> (<em>int</em>) -- 特徴料の次元</p></li>
+<li><p><strong>dim_reduction</strong> (<em>string</em>) -- 次元削減手法(pca|original))</p></li>
+<li><p><strong>train_size</strong> (<em>int</em>) -- 学習データのサイズ</p></li>
+<li><p><strong>test_size</strong> (<em>int</em>) -- テストデータのサイズ</p></li>
+<li><p><strong>test_ration</strong> (<em>int</em>) -- 母集団からの学習＆テストデータの振り分けの比率</p></li>
+<li><p><strong>random_state</strong> (<em>int</em>) -- データのランダムシード</p></li>
+<li><p><strong>plot_data</strong> (<em>boolean</em>) -- プロットを表示するか</p></li>
+<li><p><strong>shuffle</strong> (<em>boolean</em>) -- データ順序をシャッフルするかどうか</p></li>
+<li><p><strong>class_label</strong> (<em>array</em>) -- クラスラベルの更新をする場合に使用</p></li>
+<li><p><strong>class_num</strong> (<em>int</em>) -- クラス数の指定</p></li>
+<li><p><strong>figsize</strong> (<em>(</em><em>int</em><em>, </em><em>int</em><em>)</em>) -- プロットを表示する場合にサイズを指定</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>training_input</strong> (<em>array</em>) -- 学習データ</p></li>
+<li><p><strong>test_input</strong> (<em>array</em>) -- テストデータ</p></li>
+<li><p><strong>label_train</strong> (<em>array</em>) -- 学習データの正解ラベル</p></li>
+<li><p><strong>label_test</strong> (<em>array</em>) -- テストデータの正解ラベル</p></li>
+<li><p><strong>class_label</strong> (<em>array</em>) -- 更新されたラベル</p></li>
+<li><p><strong>data</strong> (<em>array</em>) -- オリジナルデータ</p></li>
+<li><p><strong>target</strong> (<em>array</em>) -- オリジナルの正解ラベル</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="phiqonnect.utils.dataset_utils.load_classification_datasets.make_input_data">
+<span class="sig-prename descclassname"><span class="pre">phiqonnect.utils.dataset_utils.load_classification_datasets.</span></span><span class="sig-name descname"><span class="pre">make_input_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_ration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_reduction</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#phiqonnect.utils.dataset_utils.load_classification_datasets.make_input_data" title="この定義へのパーマリンク"></a></dt>
+<dd><p>データの加工をする</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_dim</strong> (<em>int</em>) -- 特徴量の次元</p></li>
+<li><p><strong>data</strong> (<em>array</em>) -- データ</p></li>
+<li><p><strong>target</strong> (<em>string</em>) -- データの正解ラベル</p></li>
+<li><p><strong>train_size</strong> (<em>int</em>) -- 学習データのサイズ</p></li>
+<li><p><strong>test_size</strong> (<em>int</em>) -- テストデータのサイズ</p></li>
+<li><p><strong>test_ration</strong> (<em>int</em>) -- 母集団からの学習＆テストデータの振り分けの比率</p></li>
+<li><p><strong>class_label</strong> (<em>array</em>) -- クラスラベルの更新をする場合に使用</p></li>
+<li><p><strong>class_num</strong> (<em>int</em>) -- クラス数の指定</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>training_input</strong> (<em>array</em>) -- 層化抽出した学習データ</p></li>
+<li><p><strong>test_input</strong> (<em>array</em>) -- 層化抽出したテストデータ</p></li>
+<li><p><strong>label_train</strong> (<em>array</em>) -- 学習データの正解ラベル</p></li>
+<li><p><strong>label_test</strong> (<em>array</em>) -- テストデータの正解ラベル</p></li>
+<li><p><strong>class_label</strong> (<em>array</em>) -- 更新されたラベル</p></li>
+<li><p><strong>sample_train</strong> (<em>array</em>) -- オリジナルの学習データ</p></li>
+<li><p><strong>sample_test</strong> (<em>array</em>) -- オリジナルのテストデータ</p></li>
+<li><p><strong>sample_train</strong> (<em>array</em>) -- 次元削減後の学習データ</p></li>
+<li><p><strong>sample_test</strong> (<em>array</em>) -- 次元削減後のテストデータ</p></li>
+<li><p><strong>target_train</strong> (<em>array</em>) -- オリジナルの学習データの正解ラベル</p></li>
+<li><p><strong>target_test</strong> (<em>array</em>) -- オリジナルのテストデータの正解ラベル</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="phiqonnect.utils.dataset_utils.load_classification_datasets.make_plot">
+<span class="sig-prename descclassname"><span class="pre">phiqonnect.utils.dataset_utils.load_classification_datasets.</span></span><span class="sig-name descname"><span class="pre">make_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#phiqonnect.utils.dataset_utils.load_classification_datasets.make_plot" title="この定義へのパーマリンク"></a></dt>
+<dd><p>データをプロットする</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>training_input</strong> (<em>array</em>) -- 学習データ</p></li>
+<li><p><strong>test_input</strong> (<em>array</em>) -- テストデータ</p></li>
+<li><p><strong>label_train</strong> (<em>array</em>) -- 学習データの正解ラベル</p></li>
+<li><p><strong>label_test</strong> (<em>array</em>) -- テストデータの正解ラベル</p></li>
+<li><p><strong>fig</strong> (<em>matplotlib.pyplot.figure.Figure</em>) -- 書き込み先のFigure</p></li>
+<li><p><strong>class_label</strong> (<em>array</em>) -- ラベル</p></li>
+<li><p><strong>labels</strong> (<em>array</em>) -- ラベルの更新に使用する</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p><strong>fig</strong> -- データをプロットFigure</p>
+</dd>
+<dt class="field-odd">戻り値の型</dt>
+<dd class="field-odd"><p>matplotlib.pyplot.figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-phiqonnect.utils.dataset_utils.load_regression_datasets">
+<span id="phiqonnect-utils-dataset-utils-load-regression-datasets-module"></span><h2>phiqonnect.utils.dataset_utils.load_regression_datasets module<a class="headerlink" href="#module-phiqonnect.utils.dataset_utils.load_regression_datasets" title="この見出しへのパーマリンク"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="phiqonnect.utils.dataset_utils.load_regression_datasets.load_boston">
+<span class="sig-prename descclassname"><span class="pre">phiqonnect.utils.dataset_utils.load_regression_datasets.</span></span><span class="sig-name descname"><span class="pre">load_boston</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pca'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'minmax'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_ration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shuffle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#phiqonnect.utils.dataset_utils.load_regression_datasets.load_boston" title="この定義へのパーマリンク"></a></dt>
+<dd><p>bostonデータセットを読み込む</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_dim</strong> (<em>int</em>) -- 特徴料の次元</p></li>
+<li><p><strong>dim_reduction</strong> (<em>string</em>) -- 次元削減手法</p></li>
+<li><p><strong>target_scale</strong> (<em>string</em>) -- ターゲットの変換手法</p></li>
+<li><p><strong>train_size</strong> (<em>int</em>) -- 学習データのサイズ</p></li>
+<li><p><strong>test_size</strong> (<em>int</em>) -- テストデータのサイズ</p></li>
+<li><p><strong>test_ration</strong> (<em>int</em>) -- 母集団からの学習＆テストデータの振り分けの比率</p></li>
+<li><p><strong>random_state</strong> (<em>int</em>) -- データのランダムシード</p></li>
+<li><p><strong>plot_data</strong> (<em>boolean</em>) -- プロットを表示するか</p></li>
+<li><p><strong>shuffle</strong> (<em>boolean</em>) -- データ順序をシャッフルするかどうか</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>training_data</strong> (<em>array</em>) -- 学習データの説明変数</p></li>
+<li><p><strong>test_data</strong> (<em>array</em>) -- テストデータの説明変数</p></li>
+<li><p><strong>train_target</strong> (<em>array</em>) -- 学習データの目的変数</p></li>
+<li><p><strong>test_target</strong> (<em>array</em>) -- テストデータの目的変数</p></li>
+<li><p><strong>data</strong> (<em>array</em>) -- オリジナルデータの説明変数</p></li>
+<li><p><strong>target</strong> (<em>array</em>) -- オリジナルのデータの目的変数</p></li>
+<li><p><strong>target_scaler</strong> (<em>sklearn.preprocessing.*</em>) -- オリジナルのデータの目的変数のスケーラー</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="phiqonnect.utils.dataset_utils.load_regression_datasets.load_diabetes">
+<span class="sig-prename descclassname"><span class="pre">phiqonnect.utils.dataset_utils.load_regression_datasets.</span></span><span class="sig-name descname"><span class="pre">load_diabetes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pca'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'minmax'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_ration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shuffle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#phiqonnect.utils.dataset_utils.load_regression_datasets.load_diabetes" title="この定義へのパーマリンク"></a></dt>
+<dd><p>diabetesデータセットを読み込む</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_dim</strong> (<em>int</em>) -- 特徴料の次元</p></li>
+<li><p><strong>dim_reduction</strong> (<em>string</em>) -- 次元削減手法</p></li>
+<li><p><strong>target_scale</strong> (<em>string</em>) -- ターゲットの変換手法</p></li>
+<li><p><strong>train_size</strong> (<em>int</em>) -- 学習データのサイズ</p></li>
+<li><p><strong>test_size</strong> (<em>int</em>) -- テストデータのサイズ</p></li>
+<li><p><strong>test_ration</strong> (<em>int</em>) -- 母集団からの学習＆テストデータの振り分けの比率</p></li>
+<li><p><strong>random_state</strong> (<em>int</em>) -- データのランダムシード</p></li>
+<li><p><strong>plot_data</strong> (<em>boolean</em>) -- プロットを表示するか</p></li>
+<li><p><strong>shuffle</strong> (<em>boolean</em>) -- データ順序をシャッフルするかどうか</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>training_data</strong> (<em>array</em>) -- 学習データの説明変数</p></li>
+<li><p><strong>test_data</strong> (<em>array</em>) -- テストデータの説明変数</p></li>
+<li><p><strong>train_target</strong> (<em>array</em>) -- 学習データの目的変数</p></li>
+<li><p><strong>test_target</strong> (<em>array</em>) -- テストデータの目的変数</p></li>
+<li><p><strong>data</strong> (<em>array</em>) -- オリジナルデータの説明変数</p></li>
+<li><p><strong>target</strong> (<em>array</em>) -- オリジナルのデータの目的変数</p></li>
+<li><p><strong>target_scaler</strong> (<em>sklearn.preprocessing.*</em>) -- オリジナルのデータの目的変数のスケーラー</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="phiqonnect.utils.dataset_utils.load_regression_datasets.load_linnerud">
+<span class="sig-prename descclassname"><span class="pre">phiqonnect.utils.dataset_utils.load_regression_datasets.</span></span><span class="sig-name descname"><span class="pre">load_linnerud</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pca'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'minmax'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_ration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shuffle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#phiqonnect.utils.dataset_utils.load_regression_datasets.load_linnerud" title="この定義へのパーマリンク"></a></dt>
+<dd><p>linnerudータセットを読み込む</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_dim</strong> (<em>int</em>) -- 特徴料の次元</p></li>
+<li><p><strong>dim_reduction</strong> (<em>string</em>) -- 次元削減手法</p></li>
+<li><p><strong>target_scale</strong> (<em>string</em>) -- ターゲットの変換手法</p></li>
+<li><p><strong>train_size</strong> (<em>int</em>) -- 学習データのサイズ</p></li>
+<li><p><strong>test_size</strong> (<em>int</em>) -- テストデータのサイズ</p></li>
+<li><p><strong>test_ration</strong> (<em>int</em>) -- 母集団からの学習＆テストデータの振り分けの比率</p></li>
+<li><p><strong>random_state</strong> (<em>int</em>) -- データのランダムシード</p></li>
+<li><p><strong>plot_data</strong> (<em>boolean</em>) -- プロットを表示するか</p></li>
+<li><p><strong>shuffle</strong> (<em>boolean</em>) -- データ順序をシャッフルするかどうか</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>training_data</strong> (<em>array</em>) -- 学習データの説明変数</p></li>
+<li><p><strong>test_data</strong> (<em>array</em>) -- テストデータの説明変数</p></li>
+<li><p><strong>train_target</strong> (<em>array</em>) -- 学習データの目的変数</p></li>
+<li><p><strong>test_target</strong> (<em>array</em>) -- テストデータの目的変数</p></li>
+<li><p><strong>data</strong> (<em>array</em>) -- オリジナルデータの説明変数</p></li>
+<li><p><strong>target</strong> (<em>array</em>) -- オリジナルのデータの目的変数</p></li>
+<li><p><strong>target_scaler</strong> (<em>sklearn.preprocessing.*</em>) -- オリジナルのデータの目的変数のスケーラー</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="phiqonnect.utils.dataset_utils.load_regression_datasets.make_input_data">
+<span class="sig-prename descclassname"><span class="pre">phiqonnect.utils.dataset_utils.load_regression_datasets.</span></span><span class="sig-name descname"><span class="pre">make_input_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_ration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_reduction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_scale</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#phiqonnect.utils.dataset_utils.load_regression_datasets.make_input_data" title="この定義へのパーマリンク"></a></dt>
+<dd><p>データを加工する</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_dim</strong> (<em>int</em>) -- 特徴料の次元</p></li>
+<li><p><strong>dim_reduction</strong> (<em>string</em>) -- 次元削減手法</p></li>
+<li><p><strong>target_scale</strong> (<em>string</em>) -- ターゲットの変換手法</p></li>
+<li><p><strong>train_size</strong> (<em>int</em>) -- 学習データのサイズ</p></li>
+<li><p><strong>test_size</strong> (<em>int</em>) -- テストデータのサイズ</p></li>
+<li><p><strong>test_ration</strong> (<em>int</em>) -- 母集団からの学習＆テストデータの振り分けの比率</p></li>
+<li><p><strong>random_state</strong> (<em>int</em>) -- データのランダムシード</p></li>
+<li><p><strong>data</strong> (<em>array</em>) -- オリジナルデータの説明変数</p></li>
+<li><p><strong>target</strong> (<em>array</em>) -- オリジナルのデータの目的変数</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>training_input</strong> (<em>array</em>) -- 層化抽出した学習データ</p></li>
+<li><p><strong>test_input</strong> (<em>array</em>) -- 層化抽出したテストデータ</p></li>
+<li><p><strong>train_target</strong> (<em>array</em>) -- 学習データの目的変数</p></li>
+<li><p><strong>test_target</strong> (<em>array</em>) -- テストデータの目的変数</p></li>
+<li><p><strong>sample_train</strong> (<em>array</em>) -- オリジナルの学習データ</p></li>
+<li><p><strong>sample_test</strong> (<em>array</em>) -- オリジナルのテストデータ</p></li>
+<li><p><strong>sample_train</strong> (<em>array</em>) -- 次元削減後の学習データ</p></li>
+<li><p><strong>sample_test</strong> (<em>array</em>) -- 次元削減後のテストデータ</p></li>
+<li><p><strong>target_train</strong> (<em>array</em>) -- オリジナルの学習データの目的変数</p></li>
+<li><p><strong>target_test</strong> (<em>array</em>) -- オリジナルのテストデータの目的変数</p></li>
+<li><p><strong>target_scaler</strong> (<em>sklearn.preprocessing.*</em>) -- オリジナルのデータの目的変数のスケーラー</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="phiqonnect.utils.dataset_utils.load_regression_datasets.make_plot">
+<span class="sig-prename descclassname"><span class="pre">phiqonnect.utils.dataset_utils.load_regression_datasets.</span></span><span class="sig-name descname"><span class="pre">make_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fig</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#phiqonnect.utils.dataset_utils.load_regression_datasets.make_plot" title="この定義へのパーマリンク"></a></dt>
+<dd><p>データをプロットする</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>train_data</strong> (<em>array</em>) -- 学習データ</p></li>
+<li><p><strong>test_data</strong> (<em>array</em>) -- テストデータ</p></li>
+<li><p><strong>train_target</strong> (<em>array</em>) -- 学習データの目的変数</p></li>
+<li><p><strong>test_target</strong> (<em>array</em>) -- テストデータの目的変数</p></li>
+<li><p><strong>fig</strong> (<em>matplotlib.pyplot.figure.Figure</em>) -- 書き込み先のFigure</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p><strong>fig</strong> -- データをプロットFigure</p>
+</dd>
+<dt class="field-odd">戻り値の型</dt>
+<dd class="field-odd"><p>matplotlib.pyplot.figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="phiqonnect.utils.dataset_utils.load_regression_datasets.original_target">
+<span class="sig-prename descclassname"><span class="pre">phiqonnect.utils.dataset_utils.load_regression_datasets.</span></span><span class="sig-name descname"><span class="pre">original_target</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scaler</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#phiqonnect.utils.dataset_utils.load_regression_datasets.original_target" title="この定義へのパーマリンク"></a></dt>
+<dd><p>オリジナルの目的変数を取得する</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>target</strong> (<em>array</em>) -- スケールされた目的変数</p></li>
+<li><p><strong>scaler</strong> (<em>sklearn.preprocessing.*</em>) -- 目的変数のスケーラー</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p><strong>target</strong> -- オリジナルの目的変数</p>
+</dd>
+<dt class="field-odd">戻り値の型</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-phiqonnect.utils.dataset_utils">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-phiqonnect.utils.dataset_utils" title="この見出しへのパーマリンク"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="phiqonnect.utils.calcuration.html" class="btn btn-neutral float-left" title="phiqonnect.utils.calcuration package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="phiqonnect.utils.device.html" class="btn btn-neutral float-right" title="phiqonnect.utils.device package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023 SCSK inc.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

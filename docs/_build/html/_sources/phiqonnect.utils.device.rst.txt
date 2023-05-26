@@ -1,0 +1,29 @@
+phiqonnect.utils.device package
+===============================
+
+Submodules
+----------
+
+phiqonnect.utils.device.braket\_qunatum\_instance module
+--------------------------------------------------------
+
+.. automodule:: phiqonnect.utils.device.braket_qunatum_instance
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+phiqonnect.utils.device.tk\_to\_braket module
+---------------------------------------------
+
+.. automodule:: phiqonnect.utils.device.tk_to_braket
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: phiqonnect.utils.device
+   :members:
+   :undoc-members:
+   :show-inheritance:

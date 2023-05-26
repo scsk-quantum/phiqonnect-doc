@@ -1,0 +1,45 @@
+phiqonnect.utils.calcuration package
+====================================
+
+Submodules
+----------
+
+phiqonnect.utils.calcuration.eval\_classification\_result module
+----------------------------------------------------------------
+
+.. automodule:: phiqonnect.utils.calcuration.eval_classification_result
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+phiqonnect.utils.calcuration.eval\_regression\_result module
+------------------------------------------------------------
+
+.. automodule:: phiqonnect.utils.calcuration.eval_regression_result
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+phiqonnect.utils.calcuration.geometric\_difference module
+---------------------------------------------------------
+
+.. automodule:: phiqonnect.utils.calcuration.geometric_difference
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+phiqonnect.utils.calcuration.pca module
+---------------------------------------
+
+.. automodule:: phiqonnect.utils.calcuration.pca
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: phiqonnect.utils.calcuration
+   :members:
+   :undoc-members:
+   :show-inheritance:

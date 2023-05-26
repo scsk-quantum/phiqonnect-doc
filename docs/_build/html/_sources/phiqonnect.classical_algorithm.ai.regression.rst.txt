@@ -1,0 +1,21 @@
+phiqonnect.classical\_algorithm.ai.regression package
+=====================================================
+
+Submodules
+----------
+
+phiqonnect.classical\_algorithm.ai.regression.classical\_svr module
+-------------------------------------------------------------------
+
+.. automodule:: phiqonnect.classical_algorithm.ai.regression.classical_svr
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: phiqonnect.classical_algorithm.ai.regression
+   :members:
+   :undoc-members:
+   :show-inheritance:
